@@ -15,14 +15,20 @@
   <body>
     <div class="app-box">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            id="search-form-holder"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city">☁️ Paris</h1>
+            <h1 class="current-city" id="city">☁️ Paris</h1>
             <p id="time-weather-values" class="current-details">
               Saturday 15:32, Cloudy<br />
               Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
@@ -31,32 +37,6 @@
           <div class="current-temperature">
             <span class="current-temperature-value">24</span
             ><span class="current-temperature-unit">°C</span>
-          </div>
-        </div>
-        <div class="week-days">
-          <div class="day">
-            Sun
-            <div class="degrees">22° ☁️</div>
-          </div>
-          <div class="day">
-            Mon
-            <div class="degrees">21° 🌥️</div>
-          </div>
-          <div class="day">
-            Tues
-            <div class="degrees">20° ⛅️</div>
-          </div>
-          <div class="day">
-            Wed
-            <div class="degrees">21° 🌤️</div>
-          </div>
-          <div class="day">
-            Thurs
-            <div class="degrees">20° ⛅️</div>
-          </div>
-          <div class="day">
-            Fri
-            <div class="degrees">25° ☀️</div>
           </div>
         </div>
       </main>
@@ -76,5 +56,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
